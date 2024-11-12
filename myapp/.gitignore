@@ -1,0 +1,27 @@
+# Node.js / React
+node_modules/           # Ignore node_modules folder
+build/                  # Ignore build folder (production build)
+dist/                   # Ignore distribution folder (if you're using one)
+*.log                   # Ignore log files
+npm-debug.log*          # Ignore npm debug log files
+yarn-debug.log*         # Ignore yarn debug log files
+yarn-error.log*         # Ignore yarn error log files
+
+# IDEs & Editors
+.vscode/                # Ignore VS Code settings
+.idea/                  # Ignore JetBrains IDEs (IntelliJ/WebStorm)
+*.sublime-workspace     # Ignore Sublime Text workspace files
+*.sublime-project       # Ignore Sublime Text project files
+
+# OS-specific
+.DS_Store              # macOS system file
+Thumbs.db              # Windows system file
+
+# Environment files
+.env                   # Ignore environment variable files (e.g. for storing API keys or secrets)
+.env.local             # Local environment variables for development
+.env.development.local # Local environment variables for development
+.env.production.local  # Local environment variables for production
+
+# Build artifacts
+*.tgz                  # Ignore tarballs
