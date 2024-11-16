@@ -1,0 +1,79 @@
+.learning-path {
+  background-color: #f4f4f9; /* Light grey background */
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modules-container {
+  display: flex; /* Use Flexbox to align modules in a row */
+  justify-content: space-around; /* Distribute modules evenly */
+  gap: 20px; /* Space between modules */
+  flex-wrap: wrap; /* Allow modules to wrap on smaller screens */
+  margin-top: 20px;
+}
+
+.modules {
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px; /* Fixed width for each module */
+  height: 200px; /* Fixed height for each module */
+  transition: transform 0.2s;
+  flex-shrink: 0; /* Prevent shrinking of the modules */
+}
+
+.modules:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.modules h2 {
+  font-size: 1.5em;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+
+.modules p {
+  font-size: 1em;
+  color: #555;
+}
+
+.modules-container .modules {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.modules-container .modules:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  color: inherit; /* Ensures color stays the same on hover */
+}
+
+@media (max-width: 768px) {
+  .modules-container {
+    justify-content: center; /* Center modules on smaller screens */
+  }
+
+  .modules {
+    width: 45%; /* Two modules per row on medium screens */
+    margin-bottom: 20px; /* Space between rows */
+  }
+}
+
+@media (max-width: 480px) {
+  .modules-container {
+    flex-direction: column; /* Stack modules vertically on very small screens */
+    align-items: center;
+  }
+
+  .modules {
+    width: 100%; /* Full width for small screens */
+    margin-bottom: 20px; /* Space between stacked modules */
+  }
+}
