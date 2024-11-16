@@ -1,36 +1,29 @@
+// src/App.js
 import React from "react";
-import SearchBar from "./components/SearchBar";
-import ProfileIcon from "./components/ProfileIcon";
-import HamburgerMenu from "./components/HamburgerMenu";
-import AuthSection from "./components/AuthSection";
-import welcomeImage from "./files/welcomeImage.png";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import SignUpPage from "./components/SignUpPage";
+import LearningPath from "./pages/LearningPath";
+import Module1 from "./pages/Module1";
 import "./App.css";
 
 function App() {
   return (
-    <div className="welcome-page">
-      <header className="header">
-        <HamburgerMenu />
-        <div className="header-right">
-          <SearchBar />
-          <ProfileIcon />
-        </div>
-      </header>
-      
-      <div className="welcome-container">
-        <img src={welcomeImage} alt="Welcome" className="welcome-image" />
+    <Router>
+      <div className="welcome-page">
+        <Header /> {/* Header component now separated */}
         
-        {/* Overlaying text */}
-        <div className="welcome-text">
-          <h1>Welcome to Python Learning Platform</h1>
-        </div>
-        <AuthSection />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/learning-path" element={<LearningPath />} />
+          <Route path="/Module1" element={<Module1 />} />
+        </Routes>
       </div>
-
-      <div className="content">
-        <p></p>
-      </div>
-    </div>
+    </Router>
   );
 }
 

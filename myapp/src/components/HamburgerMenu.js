@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,13 @@ const HamburgerMenu = () => {
       {isOpen && (
         <nav className="menu">
           <ul>
-            <li>Home</li>
+            <li>
+              <Link to="/">Home</Link> {/* Link to the home page */}
+            </li>
             <li>About</li>
-            <li>Courses</li>
+            <li>
+              <Link to="/Learning-path">Courses</Link> {/* Link to the home page */}
+            </li>
             <li>Contact</li>
           </ul>
         </nav>
