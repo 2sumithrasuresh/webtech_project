@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import welcomeImage from "../files/welcomeImage.png";
-//import AuthSection from "../components/AuthSection";
+// import { Link } from "react-router-dom";
 
 const AboutPage = () => {
     return (
       <div className="about-content">
         <div className="about-container">
-        </div>
+          <h1>About Us </h1>
       </div>
+    </div>
     );
-};
+};  
 
 export default AboutPage;
