@@ -1,22 +1,4 @@
-/*
-// src/pages/Module1.js
-import React from "react";
-import "./Module1.css";
-const Module1 = () => {
-  return (
-    <div className="module">
-      <h1>Module 1: Introduction to Python</h1>
-      <p>Welcome to Module 1. This is where you will start learning Python!</p>
-    
-    <div className="compiler">compiler</div>
-    text----
-    </div>
-  );
-};
 
-export default Module1;
-
-*/
 
 import React from "react";
 import "./Module1.css";
