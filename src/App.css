@@ -68,23 +68,31 @@
 }
 
 
+/* hamburger-menu */
+
+.hamburger-menu {
+  position: relative; /* Establishes the stacking context for child elements */
+}
+
 .hamburger-button {
   background: none;
   border: none;
   font-size: 24px;
   color: white;
   cursor: pointer;
+  z-index: 1001;
 }
 
 .menu {
   position: absolute;
-  top: 50px;
-  left: 10px;
+  top: 40px;
+  left: 0px;
   background-color: #444;
+  background-color: rgba(68, 68, 68, 0.8);
   color: white;
-  padding: 50px;
+  padding: 70px;
   border-radius: 5px;
-  z-index: 1000; /* Ensures the menu appears on top */
+   z-index: 1000;           /*Ensures the menu appears on top */
 }
 
 .menu ul {
@@ -94,7 +102,21 @@
 
 .menu li {
   margin: 5px 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+
 }
+.menu a {
+  color: #ffffff; /* Set the color of the links to white */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 20px; /* Increase the font size for links */
+  display: block; /* Ensure links fill the space of their container */
+  padding: 5px 0; /* Add padding for better spacing */
+}
+.menu a:hover {
+  color: #ff9800; /* Change link color to orange when hovered */
+}
+/*  */
 
 .content {
   margin-top: 50px;
@@ -207,4 +229,24 @@
 
 .learning-path-item p {
   color: #555;
+}
+
+
+
+/* //about page */
+
+.about-content {
+  padding: 20px;
+}
+
+.about-container {
+  text-align: center;
+}
+
+.about-text h1 {
+  color: black;
+}
+
+.about-text p {
+  color: black;
 }

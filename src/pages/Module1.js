@@ -19,7 +19,7 @@ export default Module1;
 */
 
 import React from "react";
-import "./Module1.css";
+// import "./Module1.css";
 
 const Module1 = () => {
   return (
