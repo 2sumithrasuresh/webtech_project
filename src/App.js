@@ -7,6 +7,9 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./components/SignUpPage";
 import LearningPath from "./pages/LearningPath";
 import Module1 from "./pages/Module1";
+import Module2 from "./pages/Module2";
+import Module3 from "./pages/Module3";
+
 import "./App.css";
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/learning-path" element={<LearningPath />} />
           <Route path="/Module1" element={<Module1 />} />
+          <Route path="/Module2" element={<Module2 />} />
+          <Route path="/Module3" element={<Module3 />} />
+        
         </Routes>
       </div>
     </Router>
