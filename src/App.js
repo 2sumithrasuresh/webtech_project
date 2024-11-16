@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./components/SignUpPage";
 import LearningPath from "./pages/LearningPath";
 import Module1 from "./pages/Module1";
+import AboutPage from "./pages/AboutPage";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/learning-path" element={<LearningPath />} />
           <Route path="/Module1" element={<Module1 />} />
+          <Route path="/About" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>
