@@ -82,7 +82,7 @@
   left: 10px;
   background-color: #444;
   color: white;
-  padding: 10px;
+  padding: 50px;
   border-radius: 5px;
 }
 
@@ -107,7 +107,7 @@
 
 .auth-section {
   position: absolute; /* Positioning for overlay */
-  top: 10px; /* Adjust to your preference */
+  top: 140px; /* Adjust to your preference */
   right: 10px; /* Adjust to your preference */
   background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background */
   padding: 15px; /* Optional: padding */
@@ -139,4 +139,71 @@
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.auth-section .auth-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+.login-page, .signup-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-page form, .signup-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page input, .signup-page input {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+
+/* //learningpath css */
+
+.learning-path {
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learning-path h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+}
+
+.learning-path-list {
+  list-style: none;
+  padding: 0;
+}
+
+.learning-path-item {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.learning-path-item h3 {
+  margin: 0;
+  color: #0056b3;
+}
+
+.learning-path-item p {
+  color: #555;
 }
