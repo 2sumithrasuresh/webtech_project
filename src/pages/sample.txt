@@ -26,7 +26,6 @@ const LoginPage = () => {
 
         // Redirect to the home page
         navigate("/"); // Or wherever the home page is
-        window.location.reload();
       } else {
         const data = await response.json();
         if (response.status === 404) {
@@ -34,7 +33,7 @@ const LoginPage = () => {
         } else if (response.status === 401) {
           alert("Password incorrect");
         } else {
-          alert(`Error: ${data.message}`);
+          alert(Error: ${data.message});
         }
       }
     } catch (error) {
