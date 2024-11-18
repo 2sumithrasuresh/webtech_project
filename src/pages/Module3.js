@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Module1.css"; // Import Module1.css for styling
+import "../styles/Module1.css"; // Import Module1.css for styling
 
 const Module3 = () => {
   const [selectedTopic, setSelectedTopic] = useState('functions');

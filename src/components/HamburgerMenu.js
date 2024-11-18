@@ -9,7 +9,7 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div className="hamburger-menu">
+    <div className="hamburger-menu" onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)} >
       <button onClick={toggleMenu} className="hamburger-button">
         &#9776;
       </button>
@@ -19,12 +19,22 @@ const HamburgerMenu = () => {
             <li>
               <Link to="/">Home</Link> {/* Link to the home page */}
             </li>
-            <li>About</li>
+            <li>
+            <Link to="/AboutPage">About</Link>
+            </li>
             <li>
               <Link to="/Learning-path">Courses</Link> {/* Link to the home page */}
             </li>
-            <li>Contact</li>
-          </ul>
+            <li>
+              <Link to="/game">Games</Link> {/* Link to the home page */}
+            </li>
+            <li>
+              <Link to="/LeaderBoard">LeaderBoard</Link> {/* Link to the home page */}
+            </li>
+            <li><Link to="/Contact">Contact</Link>
+
+            </li>
+          </ul> 
         </nav>
       )}
     </div>

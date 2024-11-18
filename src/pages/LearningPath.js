@@ -1,7 +1,7 @@
 // src/pages/LearningPath.js
 import React from "react";
 import { Link } from "react-router-dom";
-import "./LearningPath.css";
+import "../styles/LearningPath.css";
 
 const LearningPath = () => {
   return (
