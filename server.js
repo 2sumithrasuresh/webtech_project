@@ -4,6 +4,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+const jwt = require("jsonwebtoken");
+const SECRET_KEY = "your-secret-key";
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
@@ -56,8 +59,8 @@ app.post("/login", async (req, res) => {
     if (user.password !== password) {
       return res.status(401).json({ message: "Password incorrect" });
     }
-
-    res.status(200).json({ message: "Login successful" });
+    const token = jwt.sign({ id: user._id, username: user.username }, SECRET_KEY, { expiresIn: "1h" });
+    res.status(200).json({ message: "Login successful", token });
   } catch (error) {
     res.status(500).json({ message: "Error logging in", error });
   }

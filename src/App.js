@@ -1,6 +1,7 @@
 // src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { UserProvider } from "./context/UserContext";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
@@ -22,29 +23,31 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
-      <div className="welcome-page">
-        <Header /> 
-        
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/learning-path" element={<LearningPath />} />
-          <Route path="/Module1" element={<Module1 />} />
-          <Route path="/Module2" element={<Module2 />} />
-          <Route path="/Module3" element={<Module3 />} />
-          <Route path="/game" element={<GamePage />} />
-          <Route path="/number-guessing" element={<NumberGuessing />} />
-          <Route path="/build-number-guessing" element={<BuildNumberGuessing />} />
-          <Route path="/LeaderBoard" element={<LeaderBoard />} />
-          <Route path="/AboutPage" element={<AboutPage />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/WordScramble" element={<WordScramble />} />
-          <Route path="/PythonPuzzles" element={<PythonPuzzles />} />
-        </Routes>
-      </div>
-    </Router>
+    <UserProvider>  {/* Wrap the entire app inside UserProvider */}
+      <Router>
+        <div className="welcome-page">
+          <Header /> {/* Header component now separated */}
+          
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/learning-path" element={<LearningPath />} />
+            <Route path="/Module1" element={<Module1 />} />
+            <Route path="/Module2" element={<Module2 />} />
+            <Route path="/Module3" element={<Module3 />} />
+            <Route path="/game" element={<GamePage />} />
+            <Route path="/number-guessing" element={<NumberGuessing />} />
+            <Route path="/build-number-guessing" element={<BuildNumberGuessing />} />
+            <Route path="/LeaderBoard" element={<LeaderBoard />} />
+            <Route path="/AboutPage" element={<AboutPage />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/WordScramble" element={<WordScramble />} />
+            <Route path="/PythonPuzzles" element={<PythonPuzzles />} />
+          </Routes>
+        </div>
+      </Router>
+    </UserProvider>
   );
 }
 
