@@ -38,9 +38,9 @@ const NumberGuessing = () => {
 
 
       <div>
-        <p>now build</p>
+        <p>now let's try to build this :)</p>
         <Link to="/build-number-guessing">
-            <button>gooo</button>
+            <button>let's gooo</button>
         </Link>
       </div>
     </div>

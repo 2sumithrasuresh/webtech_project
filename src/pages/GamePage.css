@@ -1,0 +1,65 @@
+.gamepage-container {
+    padding: 70px;
+    /* margin-right: 300px;
+    margin-left: 300px; */
+    background-color: hsla(0, 0%, 79%, 0.495); 
+    margin-top: 50px;
+    
+}
+
+.gamepage-container:hover {
+    background-color: hsla(0, 0%, 79%, 0.85); /* Darker beige on hover */
+}
+.heading {
+font-size: 36px;
+font-weight: bold;
+color: #333;
+margin-bottom: 50px; 
+transition: font-size 0.3s ease; 
+}
+
+.game-list {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+.game-card {
+border: 1px solid #202c28;
+background-color: rgb(226, 255, 245);
+border-radius: 10px;
+padding: 60px;
+margin: 10px;
+width: 250px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.game-card:hover h2 {
+  color: #022e4a; /* Rich green text on hover */
+}
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+  background-color: rgba(199, 239, 255, 0.712);
+}
+.gamepage-container .button {
+padding: 20px 80px;
+margin-top: 10px;
+font-size: 30px;
+cursor: pointer;
+background-color: #0c6d54;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+
+}
+
+.game-card p {
+    font-size: 22px; 
+}
+
+.heading:hover{
+  font-size: 42px; 
+}
+

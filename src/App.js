@@ -12,6 +12,7 @@ import Module3 from "./pages/Module3";
 import GamePage from "./pages/GamePage";
 import NumberGuessing from "./pages/NumberGuessing";
 import BuildNumberGuessing from "./pages/BuildNumberGuessing";
+import LeaderBoard from "./pages/LeaderBoard";
 
 
 import "./App.css";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/game" element={<GamePage />} />
           <Route path="/number-guessing" element={<NumberGuessing />} />
           <Route path="/build-number-guessing" element={<BuildNumberGuessing />} />
+          <Route path="/LeaderBoard" element={<LeaderBoard />} />
         
         
         </Routes>
