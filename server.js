@@ -42,6 +42,27 @@ app.post("/signup", async (req, res) => {
   }
 });
 
+// Route to handle login
+app.post("/login", async (req, res) => {
+  const { username, password } = req.body;
+
+  try {
+    const user = await User.findOne({ username });
+
+    if (!user) {
+      return res.status(404).json({ message: "User does not exist" });
+    }
+
+    if (user.password !== password) {
+      return res.status(401).json({ message: "Password incorrect" });
+    }
+
+    res.status(200).json({ message: "Login successful" });
+  } catch (error) {
+    res.status(500).json({ message: "Error logging in", error });
+  }
+});
+
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
