@@ -28,6 +28,9 @@ const HamburgerMenu = () => {
             <li>
               <Link to="/game">Games</Link> {/* Link to the home page */}
             </li>
+            <li>
+              <Link to="/LeaderBoard">leaderboard</Link> {/* Link to the home page */}
+            </li>
             <li>Contact</li>
           </ul> 
         </nav>

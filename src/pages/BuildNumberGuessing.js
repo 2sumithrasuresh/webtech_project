@@ -16,7 +16,7 @@ const BuildNumberGuessing = () => {
   };
 
   return (
-    <div className="container">
+    <div className="build-container">
       <h1>Fill in the Blanks Quiz</h1>
       {questions.map(({ question, correctAnswer, options }, index) => (
         <div key={index} className="question-card">

@@ -1,11 +1,7 @@
-/* General styles */
-.container {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    margin-top: 20px;
+
+  .build-container h1{
+    color: rgb(27, 105, 75);
   }
-  
-  /* Question card styles */
   .question-card {
     margin-bottom: 30px;
     padding: 10px;
@@ -23,7 +19,7 @@
   .button {
     margin: 8px;
     padding: 12px 20px;
-    background-color: #007bff;
+    background-color: #1eb58a;
     color: white;
     border: none;
     border-radius: 5px;
@@ -33,7 +29,7 @@
   }
   
   .button:hover {
-    background-color: #0056b3;
+    background-color: #294132;
   }
   
   /* Result text */
