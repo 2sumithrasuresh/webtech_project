@@ -1,0 +1,43 @@
+.profile-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.profile-info,
+.profile-edit {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  width: calc(100% - 20px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -18,6 +18,7 @@ import AboutPage from "./pages/AboutPage";
 import Contact from "./pages/Contact";
 import WordScramble from "./pages/WordScramble";
 import PythonPuzzles from "./pages/PythonPuzzles";
+import Profile from "./pages/Profile";
 
 import "./App.css";
 
@@ -44,6 +45,7 @@ function App() {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/WordScramble" element={<WordScramble />} />
             <Route path="/PythonPuzzles" element={<PythonPuzzles />} />
+            <Route path="/Profile" element={<Profile />} />
           </Routes>
         </div>
       </Router>
