@@ -15,7 +15,6 @@ const Header = () => {
         {/* Show SearchBar and ProfileIcon only if user is logged in */}
         {user ? (
           <>
-            <SearchBar />
             <ProfileIcon />
           </>
         ) : (
