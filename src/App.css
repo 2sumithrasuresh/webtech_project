@@ -192,61 +192,12 @@
 }
 
 
-/* //learningpath css */
-
-.learning-path {
-  padding: 20px;
-  background-color: #f9f9f9;
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.learning-path h2 {
-  text-align: center;
-  color: #333;
-  font-size: 2rem;
-}
-
-.learning-path-list {
-  list-style: none;
-  padding: 0;
-}
-
-.learning-path-item {
-  background-color: #ffffff;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-}
-
-.learning-path-item h3 {
-  margin: 0;
-  color: #0056b3;
-}
-
-.learning-path-item p {
-  color: #555;
-}
 
 
 
-/* //about page */
 
-.about-content {
-  padding: 20px;
-}
 
-.about-container {
-  text-align: center;
-}
 
-.about-text h1 {
-  color: black;
-}
 
-.about-text p {
-  color: black;
-}
+
+

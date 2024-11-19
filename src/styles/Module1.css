@@ -10,7 +10,7 @@
   
   h1 {
   text-align: center;
-  color: #007bff;
+  color: #07396d;
   }
   
   .topic-navigation {
@@ -24,19 +24,19 @@
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: #245bae;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
   font-weight: bold;
   }
   
   .topic-navigation button:hover {
-  background-color: #007bff;
-  color: white;
+  background-color: #003976;
+  color: rgb(255, 255, 255);
   }
   
   .topic-navigation button.active {
-  background-color: #007bff;
+  background-color: #0e3e71;
   color: white;
   }
   
@@ -97,14 +97,4 @@
   
   p {
   line-height: 1.6;
-  }
-  
-  @media (max-width: 768px) {
-  .topic-navigation {
-  flex-direction: column; /* Stack buttons on smaller screens */
-  }
-  
-  .topic-navigation button {
-  width: 100%; /* Full width buttons on mobile */
-  }
   }
