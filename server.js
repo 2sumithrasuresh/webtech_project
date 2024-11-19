@@ -28,6 +28,7 @@ const userSchema = new mongoose.Schema({
   username: String,
   email: String,
   password: String,
+  points: { type: Number, default: 0 },
 });
 
 const User = mongoose.model("User", userSchema);
@@ -67,9 +68,16 @@ app.post("/login", async (req, res) => {
 });
 
 // Route to update points
+// Route to update points
 app.post("/updatePoints", async (req, res) => {
-  const token = req.headers.authorization.split(" ")[1];
-  
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader || !authHeader.startsWith("Bearer ")) {
+    return res.status(401).json({ message: "Authorization token missing or invalid" });
+  }
+
+  const token = authHeader.split(" ")[1];
+
   try {
     const decoded = jwt.verify(token, SECRET_KEY);
     const userId = decoded.id;
@@ -90,6 +98,7 @@ app.post("/updatePoints", async (req, res) => {
     res.status(500).json({ message: "Error updating points", error });
   }
 });
+
 
 
 const PORT = 5000;
