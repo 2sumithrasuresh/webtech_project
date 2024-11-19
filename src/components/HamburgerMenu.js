@@ -35,7 +35,7 @@ const HamburgerMenu = () => {
             <li>
               <Link to="/AboutPage">About</Link>
             </li>
-            <li>Contact</li>
+            <Link to="/Contact">Contact</Link>
 
             {/* Show other links only if the user is logged in */}
             {user ? (

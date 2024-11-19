@@ -8,7 +8,10 @@ const jwt = require("jsonwebtoken");
 const SECRET_KEY = "your-secret-key";
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', // replace with your frontend URL if different
+}));
+
 app.use(bodyParser.json());
 
 // Connect to MongoDB
@@ -65,6 +68,17 @@ app.post("/login", async (req, res) => {
     res.status(500).json({ message: "Error logging in", error });
   }
 });
+
+// Route to fetch leaderboard
+app.get("/leaderboard", async (req, res) => {
+  try {
+    const users = await User.find().sort({ points: -1 }); // Sort players by score in descending order
+    res.status(200).json(users);
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching leaderboard", error });
+  }
+});
+
 
 const PORT = 5000;
 app.listen(PORT, () => {
